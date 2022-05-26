@@ -1,0 +1,28 @@
+langs:
+  en: English
+  ja: 日本語
+  ko: 한국어
+  zh-Hans: 简体中文
+  zh-Hant: 繁體中文
+  es: español
+  de: Deutsch
+  vn: Tiếng Việt
+  ru: ру́сский язы́к
+
+pagination:
+  next_page: "다음 페이지"
+  previous_page: "이전 페이지"
+
+sharing_button_prompt: "자유롭게 공유하세요!"
+
+related_posts: "다음을 즐길 수도 있습니다."
+
+read_time_less_than_one_minute: "1 분 미만 읽기"
+read_time_one_minute: "1 분 읽기"
+read_time_minute_prefix: "예상 읽기 시간"
+read_time_minute_suffix: "읽은 분"
+
+epilogue_website_title: "공식 웹 사이트"
+epilogue_product_title: "생성물"
+epilogue_social_title: "소셜 플랫폼"
+epilogue_donate_title: "기부"

@@ -1,0 +1,51 @@
+---
+layout: default
+title: Home
+---
+
+<ul class="posts">
+  {% for post in paginator.posts %}
+    {% unless post.next %}
+      <h3>{{ post.date | date: '%Y' }}</h3>
+    {% else %}
+      {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+      {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+      {% if year != nyear %}
+        <h3>{{ post.date | date: '%Y' }}</h3>
+      {% endif %}
+    {% endunless %}
+
+  <li itemscope>
+    {% if post.type != '' %}
+      <a href="{{ post.url | relative_url }}">{{ post.type }} | {{ post.title }}</a>
+    {% else %}
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    {% endif %}
+    <p class="post-date">
+      <span>
+        {% include date.html date=post.date %}
+      </span>
+      {% comment %}
+        <span>{% include read-time.html %}</span>
+      {% endcomment %}
+    </p>
+  </li>
+  {% endfor %}
+</ul>
+
+<!-- Pagination links -->
+{% if paginator.next_page or paginator.previous_page %}
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a class="pagination-button pagination-active" href="{{ paginator.previous_page_path | relative_url }}">{% t pagination.previous_page %}</a>
+    {% else %}
+      <span class="pagination-button">{% t pagination.previous_page %}</span>
+    {% endif %}
+
+    {% if paginator.next_page %}
+      <a class="pagination-button pagination-active next" href="{{ paginator.next_page_path | relative_url }}">{% t pagination.next_page %}</a>
+    {% else %}
+      <span class="pagination-button">{% t pagination.next_page %}</span>
+    {% endif %}
+  </div>
+{% endif %}

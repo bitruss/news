@@ -1,0 +1,43 @@
+<div class="related">
+  {% assign listed_posts_urls = page.url | split: ' ' %}
+  {% assign has_related_post = 0 %}
+
+  {% for tag in page.tags %}
+    {% for mypost in site.tags[tag] limit:3 %}
+      {% if listed_posts_urls contains mypost.url %}
+      {% else %}
+        {% assign has_related_post = 1 %}
+        {% assign listed_posts_urls = listed_posts_urls | push: mypost.url %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+
+  {% if has_related_post == 1 %}
+    <h2>{% t related_posts %}</h2>
+  {% endif %}
+
+  {% assign listed_posts_urls = page.url | split: ' ' %}
+
+  <ul class="related-posts">
+    {% for tag in page.tags %}
+      {% for mypost in site.tags[tag] limit:3 %}
+        {% if listed_posts_urls contains mypost.url %}
+        {% else %}
+          <li>
+            <h3>
+              <a href="{{ mypost.url | relative_url }}">
+                {{ mypost.title }}
+
+                {% comment %}
+                  <img src="{{ site.baseurl }}images/{{ mypost.image.teaser }}">
+                  <small>{{ mypost.date | date: "%B %-d, %Y" }}</small>
+                {% endcomment %}
+              </a>
+            </h3>
+          </li>
+          {% assign listed_posts_urls = listed_posts_urls | push: mypost.url %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  </ul>
+</div>

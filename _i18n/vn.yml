@@ -1,0 +1,28 @@
+langs:
+  en: English
+  ja: 日本語
+  ko: 한국어
+  zh-Hans: 简体中文
+  zh-Hant: 繁體中文
+  es: español
+  de: Deutsch
+  vn: Tiếng Việt
+  ru: ру́сский язы́к
+
+pagination:
+  next_page: "Next Page"
+  previous_page: "Previous Page"
+
+sharing_button_prompt: "Feel free to share!"
+
+related_posts: "You may also enjoy:"
+
+read_time_less_than_one_minute: "less than 1 minute read"
+read_time_one_minute: "1 minute read"
+read_time_minute_prefix: ""
+read_time_minute_suffix: "minutes read"
+
+epilogue_website_title: "Official Website"
+epilogue_product_title: "Products"
+epilogue_social_title: "Social Media"
+epilogue_donate_title: "Help Us by Donating Us"

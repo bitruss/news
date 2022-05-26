@@ -1,0 +1,47 @@
+# Site Build Settings
+
+# Jekyll-paginate-v2 configuration
+#  pagination:
+#   enabled: true
+#   per_page: 5
+#   permalink: '/page/:num/'
+#   title: ':title - page :num of :max'
+#   limit: 0
+#   sort_field: 'date'
+#   sort_reverse: true
+
+# jekyll-paginate configuration
+paginate: 20
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title
+plugins:
+  [
+    jekyll-paginate,
+    jekyll-sitemap,
+    jekyll-feed,
+    jekyll-seo-tag,
+    jekyll-environment-variables,
+    jekyll-multiple-languages-plugin,
+  ]
+
+languages: ["en", "ko", "zh-Hans", "ru", "vn", "ja"]
+exclude_from_localizations:
+  ["uploads", "assets", "admin", "README.md", "LICENSE.md"]
+
+# Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
+title: "Meson News"
+subtitle: "Meson Network"
+description: "Bandwidth trading platform built on Blockchain."
+domain: "https://news.meson.network"
+
+# RSS 2.0 can be used instead of Atom by uncommenting following two lines
+#feed:
+#  path: rss-feed.xml
+
+# Rendering future dated posts
+future: true
+
+max_slice_size: 999999

@@ -1,0 +1,86 @@
+<head>
+  <title>{{ site.title }} — {{ site.description }}</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+
+  <!-- For Google -->
+  <meta
+    name="description"
+    content="Bandwidth trading platform built on Blockchain."
+  />
+  <meta name="keywords" content="Privacy,Meson Network" />
+  <meta name="author" content="Meson Network" />
+  <meta name="application-name" content="Meson Network" />
+
+  <!-- For Facebook -->
+  <meta property="og:title" content="Meson Network — Bandwidth trading platform built on Blockchain." />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:image"
+    content="https://raw.githubusercontent.com/daqnext/meson-docs/main/src/images/meson-center.png"
+  />
+  <meta property="og:url" content="https://meson.network/" />
+  <meta
+    property="og:description"
+    content="Bandwidth trading platform built on Blockchain."
+  />
+  <meta property="fb:app_id" content="321539018508290" />
+
+  <!-- For Twitter -->
+  {% include twitter-card.html %}
+
+  <link
+    rel="shortcut icon"
+    href="{{ site.baseurl_root }}/assets/img/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="{{ site.baseurl_root }}/assets/img/apple-touch-icon.png"
+  />
+
+  <link rel="stylesheet" href="{{ site.baseurl_root }}/assets/css/main.css" />
+  <link rel="stylesheet" href="{{ site.baseurl_root }}/assets/css/syntax.css" />
+
+  <!-- Use Atom -->
+  {% feed_meta %}
+  
+  <!-- Use RSS-2.0 -->
+  <link href="{{ site.baseurl_root }}/rss-feed.xml" type="application/rss+xml" rel="alternate" title="{{ site.title }} | {{ site.description }}"/>
+
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Code+Pro"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Quattrocento+Sans"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+
+  <!--
+  <script
+    type="text/javascript"
+    async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"
+  >
+    MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      });
+  </script> -->
+
+  <!-- Google Analytics -->
+  {% include google-analytics.html %}
+
+  <!-- Use Jekyll SEO plugin -->
+  {% seo %}
+</head>

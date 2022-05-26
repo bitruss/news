@@ -1,0 +1,30 @@
+langs:
+  en: English
+  ja: 日本語
+  ko: 한국어
+  zh-Hans: 简体中文
+  zh-Hant: 繁體中文
+  es: español
+  de: Deutsch
+  vn: Tiếng Việt
+  ru: ру́сский язы́к
+
+pagination:
+  next_page: "下一页"
+  previous_page: "上一页"
+
+sharing_button_prompt: "分享"
+
+related_posts: "您可能也喜欢："
+
+post_date_prefix: ""
+
+read_time_less_than_one_minute: "预计阅读时间少于 1 分钟"
+read_time_one_minute: "预计阅读时间 1 分钟"
+read_time_minute_prefix: "预计阅读时间"
+read_time_minute_suffix: "分钟"
+
+epilogue_website_title: "官方网站"
+epilogue_product_title: "产品"
+epilogue_social_title: "社交平台"
+epilogue_donate_title: "捐赠"

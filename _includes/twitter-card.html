@@ -1,0 +1,24 @@
+{% if page.layout == 'default' %}
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Meson Network" />
+  <meta name="twitter:description" content="Bandwidth trading platform built on Blockchain." />
+{% else %}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ page.title }}" />
+  <meta name="twitter:description" content="{{ page.description }}" />
+{% endif %}
+
+{% if page.image == nil or page.image == empty %}
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/daqnext/meson-docs/main/src/images/meson-center.png" />
+{% else %}
+  {% assign image_url = page.image | replace: "{{ site.baseurl_root }}", "" %}
+  <meta name="twitter:image" content="{{ site.domain }}{{ image_url }}">
+{% endif %}
+
+{% if page.layout == 'default' %}
+  <meta name="twitter:image:alt" content="Meson Network" />
+{% else %}
+  <meta name="twitter:image:alt" content="{{ page.title }}" />
+{% endif %}
+
+<meta name="twitter:url" content="{{ page.url | absolute_url  }}" />

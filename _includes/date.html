@@ -1,0 +1,13 @@
+{% assign date_string = include.date | date: "%Y-%m-%d" %}
+{% if include.timezone %}
+  {% if include.timezone >= 0 %}
+    {% assign date_string = date_string | append: "UTC+" | append: include.timezone %}
+  {% else %}
+    {% assign date_string = date_string | append: "UTC" | append: include.timezone %}
+  {% endif %}
+{% endif %}
+{% if include.location %}
+  {% assign date_string = date_string | append: ", " | append: include.location %}
+{% endif %}
+
+{{ date_string }}
