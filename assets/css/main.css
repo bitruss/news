@@ -130,7 +130,7 @@ hr {
 
 .masthead-subtitle {
   font-weight: 500;
-  color: #999;
+  color: #000000;
   display: block;
 }
 
@@ -168,7 +168,7 @@ hr {
 }
 
 .languages li.selected a {
-  border-bottom: 1px solid #BBB;
+  border-bottom: 2px solid #0072ff;
   pointer-events: none;
 }
 
@@ -177,7 +177,7 @@ hr {
   padding: 0 0 2px;
 }
 .languages a:hover {
-  border-bottom: 1px solid #666;
+  border-bottom: 2px solid #0072ff;
 }
 
 /*
@@ -488,7 +488,7 @@ td {
 }
 
 .fa-linkedin:hover {
-  color: #0073a4;
+  color: #0072ff;
 }
 
 .fa-facebook {

@@ -27,7 +27,7 @@ plugins:
     jekyll-multiple-languages-plugin,
   ]
 
-languages: ["en", "ko", "zh-Hans", "ru", "vn", "ja"]
+languages: ["en", "ko", "zh-Hans", "ru", "vn", "tr", "ja"]
 exclude_from_localizations:
   ["uploads", "assets", "admin", "README.md", "LICENSE.md"]
 
