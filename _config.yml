@@ -27,12 +27,12 @@ plugins:
     jekyll-multiple-languages-plugin,
   ]
 
-languages: ["en", "ko", "zh-Hans", "ru", "vn", "tr", "ja"]
+languages: ["en", "ko", "ru", "vn", "tr", "ja", "zh-tw"]
 exclude_from_localizations:
   ["uploads", "assets", "admin", "README.md", "LICENSE.md"]
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
-title: "Meson News"
+title: "Meson Network News"
 subtitle: "Meson Network"
 description: "Bandwidth trading platform built on Blockchain."
 domain: "https://news.meson.network"

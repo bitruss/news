@@ -6,8 +6,8 @@ date: 2021-11-10
 timezone: 8
 type: ''
 tags: []
-zh-Hans: []
-zh-Hant: []
+zh-sg: []
+zh-tw: []
 title: "Explore Data Center Carbon Credit Protocol (DCCC)"
 image: ''
 ---

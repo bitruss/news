@@ -6,9 +6,9 @@ date: 2021-11-10
 tags: []
 en: []
 ja: []
-zh-Hans: []
-zh-Hant: []
-title: Khám phá giao thức Carbon của các Trung tâm Dữ liệu (DCCC)
+zh-sg: []
+zh-tw: []
+title: "Khám phá giao thức Carbon của các Trung tâm Dữ liệu (DCCC)"
 description: ''
 type: ''
 image: ''

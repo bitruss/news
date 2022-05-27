@@ -6,8 +6,8 @@ date: 2021-11-10
 timezone: 9
 tags: []
 en: []
-zh-Hans: []
-zh-Hant: []
+zh-sg: []
+zh-tw: []
 title: "Data Center Carbon Protocol について"
 description:
 type: ''
@@ -90,8 +90,7 @@ Meson Networkは、データセンターの需要と世界の二酸化炭素排�
 MESONは、DCCCの利用をサポートする最初の市場となります。帯域集約・取引市場をボトムアップで構築することで、遊休帯域資源の問題を解決しようとしています。PUE基準を満たすノードは、MESONネットワークに資源を提供して一定量のDCCCを得ることができ、PUE基準を満たさないノードは、MESONネットワークに資源を提供してDCCCの残高を得ることができます。DCCCは、MESONでリソースを取引する際の重要なパラメータとなります。DCCCの基準を満たすノードは、リソース交換市場で優先されます。DCCCの基準を満たさないノードは、収入や取引の順位が制限されます。私たちは、世界のためのプラットフォームを創造し、このプラットフォームが人類の持続可能性に貢献することを願っています。
 
 ![](https://raw.githubusercontent.com/daqnext/DCCC/main/assets/05.png)
-
-[https://www.instagram.com/p/BpPovnsFcO9/](https://www.instagram.com/p/BpPovnsFcO9/) 
+<p><center>https://www.instagram.com/p/BpPovnsFcO9/</center></p>
 
 ## 需要側で支払うのか、供給側で支払うのか
 

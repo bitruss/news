@@ -1,7 +1,7 @@
 const { resolve: resolvePath, parse } = require("path");
 const { readdirSync, readFileSync, renameSync, writeFileSync } = require("fs");
 
-const WORKING_FOLDER = resolvePath(__dirname, "../_i18n/zh-Hans/_posts");
+const WORKING_FOLDER = resolvePath(__dirname, "../_i18n/zh-sg/_posts");
 const files = readdirSync(WORKING_FOLDER);
 
 files
