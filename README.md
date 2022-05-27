@@ -29,7 +29,6 @@ Lagrange/
 |  |  └── main.css             # Main CSS file
 |  |  └── syntax.css           # Style sheet for code syntax highlighting
 |  └── img                     # Images go here
-├── menu                       # Menu pages
 ├── _config.yml                # Site build settings
 ├── Gemfile                    # Ruby Gemfile for managing Jekyll plugins
 ├── index.html                 # Home page
